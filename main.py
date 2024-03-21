@@ -25,7 +25,7 @@ for epoch in range(NUM_EPOCHS):
         
         # [b, 51] -> [b*50]
         y = y[:, 1:].reshape(-1)
-        
+        test =1
         # ignore pad
         select = y != zidian_y['<PAD>']
         pred = pred[select]
